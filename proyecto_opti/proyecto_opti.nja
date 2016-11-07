@@ -1,0 +1,29 @@
+{
+  "mainFile": "main.py", 
+  "use-tabs": false, 
+  "venv": "/home/danilo/Documentos/Optimizacion/proyecto_opti/venv/bin/python", 
+  "relatedProjects": [], 
+  "name": "proyecto_opti", 
+  "license": "GNU General Public License v2", 
+  "url": "", 
+  "pythonPath": "python3", 
+  "preExecScript": "", 
+  "additional_builtins": [], 
+  "programParams": "", 
+  "indentation": 4, 
+  "PYTHONPATH": "", 
+  "supported-extensions": [
+    ".py", 
+    ".html", 
+    ".jpg", 
+    ".png", 
+    ".ui", 
+    ".css", 
+    ".json", 
+    ".js", 
+    ".ini"
+  ], 
+  "project-type": "", 
+  "postExecScript": "", 
+  "description": ""
+}
