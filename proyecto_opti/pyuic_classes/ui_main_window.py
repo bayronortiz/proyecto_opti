@@ -35,15 +35,24 @@ class Ui_MainWindow(object):
         self.menubar = QtGui.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 640, 23))
         self.menubar.setObjectName(_fromUtf8("menubar"))
+        self.menuOpciones = QtGui.QMenu(self.menubar)
+        self.menuOpciones.setObjectName(_fromUtf8("menuOpciones"))
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtGui.QStatusBar(MainWindow)
         self.statusbar.setObjectName(_fromUtf8("statusbar"))
         MainWindow.setStatusBar(self.statusbar)
+        self.actionSalir = QtGui.QAction(MainWindow)
+        self.actionSalir.setObjectName(_fromUtf8("actionSalir"))
+        self.menuOpciones.addAction(self.actionSalir)
+        self.menubar.addAction(self.menuOpciones.menuAction())
 
         self.retranslateUi(MainWindow)
+        QtCore.QObject.connect(self.actionSalir, QtCore.SIGNAL(_fromUtf8("triggered()")), MainWindow.close)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow", None))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Programación Lineal", None))
         self.label.setText(_translate("MainWindow", "Soy la ventana principal", None))
+        self.menuOpciones.setTitle(_translate("MainWindow", "Opciones", None))
+        self.actionSalir.setText(_translate("MainWindow", "Salir", None))
 
